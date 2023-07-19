@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚽ Գուշակիր ֆուտբոլիստը</title>
+    <link rel='stylesheet' href='./style.css'>
+    <h1>Գուշակիր ֆուտբոլիստը</h1>
+    <h2>Ընտրիր դժվարությունը</h2>
+    <div class="Row">
+        <div class="Column">
+            <img src="./jpgs/Messi.jpg" class="messi" alt="Messi">
+        </div>
+        <div class="Column buttons">
+            <button class="button">Հեշտ</button>
+            <button class="button button2">Միջին</button>
+            <button class="button button3">Դժվար</button>
+        </div>
+        <div class="Column">
+            <img src="./jpgs/Ronaldo.jpg" class="ronaldo" alt="Ronaldo">
+        </div>
+
+    </div>
+
+  
+
+
+</head>
+
+<body>
+    <section class="card" id="card">
+        <section class="infobar">
+            <div style = "width: 7%"class="score">Ճշգրտություն: <span id="alertaccuracy"></span></div>
+        </section>
+        <section class="infobar">
+            <div class="score">Միավոր: <span id="score">0</span></div>
+            <div class="time" id="time">0</div>
+        </section>
+        <div class="container">
+            <section class="section">
+                <img src="./jpgs/Messi.jpg" alt="Messi" class="flag" id="flag">
+            </section>
+            <div class="border"></div>
+            <section class="section" id="optionhalf">
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" value="Մեսսի" name="option" id="option1input" class="optionradio">
+                        <label for="option1input" class="label" id="option1label">Մեսսի</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" value="Լեվանդովսկի" name="option" id="option2input" class="optionradio">
+                        <label for="option2input" class="label" id="option2label">Լեվանդովսկի</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" value="Ռոնալդու" name="option" id="option3input" class="optionradio">
+                        <label for="option3input" class="label" id="option3label">Ռոնալդու</label>
+                    </div>
+                </div>
+            </section>
+    </section>
+    <script src='script.js'></script>
+</body>
+
+</html>
