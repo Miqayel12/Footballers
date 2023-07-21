@@ -1,18 +1,18 @@
 const footballers = [
     {
-        "footballer": "/jpgs/Alba.jpg",
+        "footballer": "./jpgs/Alba.jpg",
         "name": "Ալբա"
-    },
-    {
-        "footballer": "/jpgs/Alli.jpg",
+    },{
+        "footballer": "./jpgs/Alli.jpg",
         "name": "Ալլի"
-    },
-    {
-        "footballer": "/jpgs/Alva.jpg",
+    },{
+        "footballer": "./jpgs/Alva.jpg",
         "name": "Ալվա"
-    },
-    {
-        "footballer": "/jpgs/Araujo.jpg",
-        "name": "Առա"
+    },{
+        "footballer": "./jpgs/Araujo.jpg",
+        "name": "Առաուխո"
+    },{
+        "footballer": "./jpgs/Balde.jpg",
+        "name": "Բալդե"
     }
   ]
