@@ -54,7 +54,7 @@ function check() {
     } catch {
         return;
     }
-    if (input === "Մեսսի") {
+    if (input === correct.name) {
         correctAnswer++;
         getElement("score").innerHTML = correctAnswer;
     } else {
@@ -64,7 +64,10 @@ function check() {
 }
 function finish() {
     clearInterval(checkInterval);
-    let percentage = Math.round(correctAnswer / (correctAnswer + incorrectanswer)) * 100;
+    getElement("alert").style.display = "block";
+  getElement("card").style.display = "none";
+  getElement("alertscore").innerHTML = correctAnswer;
+    let percentage = Math.round((correctAnswer / (correctAnswer + incorrectanswer)) * 100);
     if (isNaN(percentage)) {
         resultForAnswers = 100;
     } else {
@@ -72,9 +75,11 @@ function finish() {
             resultForAnswers = "Դուք ցուցաբերել եք լավ արդյունք"
         } else if (percentage >= 95) {
             resultForAnswers = "Դուք ցուցաբերել եք գերազանց արդյունք"
+        }else if (percentage <=75){
+            resultForAnswers = "Դուք ցուցաբերել եք վատ արդյունք"
         }
     }
-    getElement("alertaccuracy").innerHTML = `${resultForAnswers}%`;
+    getElement("alertaccuracy").innerHTML = `${resultForAnswers}%  `;
 }
 function refresh() {
     location = location;
